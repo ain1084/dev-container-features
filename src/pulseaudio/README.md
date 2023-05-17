@@ -1,22 +1,24 @@
 
-# Installs PulseAudio
+# PulseAudio (pulseaudio)
 
-Installs PulseAudio and alsa-utils
+Installs PulseAudio into the devcontainer
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ain1084/dev-container-features/pulseaudio:1": {
-        "version": "latest"
-    }
+    "ghcr.io/ain1084/dev-container-features/pulseaudio:1": {}
 }
 ```
 
 ## Options
 
-None
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+
+
+
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ain1084/dev-container-features/blob/main/src/color/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ain1084/dev-container-features/blob/main/src/pulseaudio/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
