@@ -1,13 +1,13 @@
 
-# My Favorite Color (color)
+# Installs PulseAudio
 
-A feature to remind you of your favorite color
+Installs PulseAudio and alsa-utils
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/color:1": {
+    "ghcr.io/ain1084/dev-container-features/pulseaudio:1": {
         "version": "latest"
     }
 }
@@ -15,11 +15,7 @@ A feature to remind you of your favorite color
 
 ## Options
 
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| favorite | Choose your favorite color. | string | red |
-
-
+None
 
 ---
 

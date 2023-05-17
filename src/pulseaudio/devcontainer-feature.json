@@ -1,0 +1,20 @@
+{
+    "name": "PulseAudio",
+    "id": "pulseaudio",
+    "version": "1.0.0",
+    "description": "Installs PulseAudio into the devcontainer",
+    "options": {},
+    "mounts": [
+        {
+            "source": "${localEnv:XDG_RUNTIME_DIR}/pulse/native",
+            "target": "/run/pulseaudio.socket",
+            "type": "bind"
+        }
+    ],
+    "containerEnv": {
+		"PULSE_SERVER": "unix:/run/pulseaudio.socket"
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
