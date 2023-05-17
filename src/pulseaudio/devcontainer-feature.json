@@ -2,7 +2,7 @@
     "name": "PulseAudio",
     "id": "pulseaudio",
     "version": "1.0.0",
-    "description": "Installs PulseAudio into the devcontainer",
+    "description": "Installs PulseAudio and alsa-utils into the devcontainer",
     "options": {},
     "mounts": [
         {
