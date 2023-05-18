@@ -2,4 +2,4 @@
 
 ## Contents
 
-- [pulseaudio](./src/pulseaudio/README.md): Installs PulseAudio and alsa-utils 
+- [pulseaudio](./src/pulseaudio/README.md): Installs PulseAudio 
