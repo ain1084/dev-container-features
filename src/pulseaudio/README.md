@@ -26,7 +26,7 @@ In short, it is a feature that installs pulseaudio by apt-get and mounts the soc
 
 ## Limitation
 
-This feature depends on docker's host environment. It works only on Ubuntu 22.04 x64. It **doesn't work** on WSL2 docker. In order for it to work, you need to change the PulseAudio server path. This is ${XDG_RUNTIME_DIR}/pulse/native (e.g. usually /run/user/1000/pulse/native) on Ubuntu, but /mnt/wslg/pulse/native on WSL2.
+This feature depends on docker's host environment. It works only on Ubuntu 22.04 x64. It **doesn't work** on WSL2 docker. In order for it to work, you need to change the PulseAudio server path. This is ${XDG_RUNTIME_DIR}/pulse/native (e.g. usually /run/user/1000/pulse/native) on Ubuntu, but /mnt/wslg/PulseServer on WSL2.
 
 ## CI Test
 CI Test is removed. It always fails because the XDG_RUNTIME_DIR environment variable it references from "mounts" is not set.
@@ -39,6 +39,7 @@ For example, if you use the Rust image (mcr.microsoft.com/devcontainers/rust), y
 cargo init
 cargo add libpulse-binding libpulse-simple-binding
 ```
+
 
 ---
 
