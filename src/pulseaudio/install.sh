@@ -2,4 +2,4 @@
 
 set -e
 
-apt-get update -y && apt-get install --no-install-recommends -y alsa-utils  pulseaudio
+apt-get update -y && apt-get install --no-install-recommends -y pulseaudio
