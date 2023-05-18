@@ -7,12 +7,12 @@
     "mounts": [
         {
             "source": "${localEnv:XDG_RUNTIME_DIR}/pulse/native",
-            "target": "/run/pulseaudio.socket",
+            "target": "/mnt/pulse/native",
             "type": "bind"
         }
     ],
     "containerEnv": {
-		"PULSE_SERVER": "unix:/run/pulseaudio.socket"
+		"PULSE_SERVER": "unix:/mnt/pulse/native"
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
