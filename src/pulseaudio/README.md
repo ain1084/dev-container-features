@@ -1,7 +1,7 @@
 
 # PulseAudio (pulseaudio)
 
-Installs PulseAudio and alsa-utils into the devcontainer
+Installs PulseAudio into the devcontainer
 
 ## Example Usage
 
