@@ -1,9 +1,9 @@
 ## Notes
 
-A feature for playing sounds using PulseAudio inside a dev container. This feature installs PulseAudio and alsa-utils.
+A feature for playing sounds using PulseAudio inside a dev container. This feature installs PulseAudio and ALSA library (libasound2-dev).
  Transfer the sound from inside the dev container to the host and play the sound (using PulseAudio's server/client mechanism). The socket on the server side uses /run/user/${UID}/pulse/native and connects with the dev container with bind mount.
 
-In short, it is a feature that installs pulseaudio by apt-get and mounts the socket of PulseAudio.
+In short, it is a feature that installs pulseaudio and libasound2-dev by apt-get and mounts the socket of PulseAudio.
 
 ## Limitation
 
@@ -19,4 +19,9 @@ For example, if you use the Rust image (mcr.microsoft.com/devcontainers/rust), y
 ```
 cargo init
 cargo add libpulse-binding libpulse-simple-binding
+```
+
+Also, [CPAL](https://github.com/RustAudio/cpal) can work.
+```
+cargo add cpal
 ```
