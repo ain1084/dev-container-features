@@ -26,10 +26,10 @@ In short, it is a feature that installs pulseaudio and libasound2-dev by apt-get
 
 ## Limitation
 
-This feature depends on docker's host environment. It works only on Ubuntu 22.04 x64. It **doesn't work** on WSL2 docker. In order for it to work, you need to change the PulseAudio server path. This is ${XDG_RUNTIME_DIR}/pulse/native (e.g. usually /run/user/1000/pulse/native) on Ubuntu, but /mnt/wslg/PulseServer on WSL2.
+**This feature depends on docker's host environment**. This works on Ubuntu 22.04 x64 or WSL2 Ubuntu. $XDG_RUNTIME_DIR must be set on the Host and ${XDG_RUNTIME_DIR}/pulse/native should point to PulseServer.
 
 ## CI Test
-CI Test is removed. It always fails because the XDG_RUNTIME_DIR environment variable it references from "mounts" is not set.
+CI Test is removed. It always fails because the $XDG_RUNTIME_DIR variable it references from "mounts" is not set.
 
 ## Additional information
 ### Use from Rust
