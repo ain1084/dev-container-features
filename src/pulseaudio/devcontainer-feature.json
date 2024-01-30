@@ -1,7 +1,7 @@
 {
     "name": "PulseAudio",
     "id": "pulseaudio",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Installs PulseAudio into the devcontainer",
     "options": {},
     "mounts": [
