@@ -53,7 +53,7 @@ brew services start pulseaudio
 
 Display sink list.
 ```
-pacmd list-sinks | grep -e ‘name:’ -e ‘index:’ -e ‘card:’
+pacmd list-sinks | grep -e 'name:' -e 'index:' -e 'card:'
 ```
 For example, the following is displayed.
 ```
