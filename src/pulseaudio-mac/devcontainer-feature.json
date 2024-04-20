@@ -4,16 +4,16 @@
     "version": "1.0.0",
     "description": "Installs PulseAudio into the container for mac",
     "options": {},
-	"mounts": [
-		{
-			"source": "${localEnv:HOME}/.config/pulse",
-			"target": "/home/vscode/.config/pulse",
-			"type": "bind"
-		}
-	],
-	"containerEnv": {
-		"PULSE_SERVER": "host.docker.internal"
-	},
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.config/pulse",
+            "target": "/home/vscode/.config/pulse",
+            "type": "bind"
+        }
+    ],
+    "containerEnv": {
+        "PULSE_SERVER": "host.docker.internal"
+    },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
     ]
